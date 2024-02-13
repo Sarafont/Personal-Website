@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O meu portefólio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Sara Fontes</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Sara Fontes</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Fotografia de profile">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Olá, eu sou a</p>
+      <h1 class="title">Sara Fontes</h1>
+      <p class="section__text__p2">Computer Scientist</p>
+      <!--Aqui vamos colocar um botão para abrir o pdf do CV e outro para quando carregar ir para a secção do contato-->
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/CV-Sara-Fontes.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contato</button>
+      </div>
+      <!--Aqui vamos colocar um botão as redes sociais e redirecionar sempre que são clicados-->
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="O meu linkedIn" class="icon" onclick="location.href='https://pt.linkedin.com/in/sara-fontes-b930b09b'">
+        <img src="./assets/github.png" alt="O meu gitHub" class="icon" onclick="location.href='https://github.com/Sarafont'">
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Para saber mais</p>
+    <h1 class="title">Sobre mim</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic">
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience Icon" class="icon"/>
+            <h3>Experiência</h3>
+            <p>Assistente de vendas - Inditex</p>
+            <p>Inserção de conteúdos - Skillmind</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education Icon" class="icon"/>
+            <h3>Formação</h3>
+            <p>Licenciatura em Ciências da Computação na Universidade do Minho (2020-2023)</p>
+            <p>Mestrado em Sistemas de Informação na Universidade do Minho (Em curso)</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>Sou uma jovem formada em Ciências da Computação pela Universidade do Minho. Desde cedo, descobri uma paixão por explorar o mundo digital e transformar ideias em realidade. Sou conhecida pela minha personalidade carismática, frontal e amigável, características que me tornam uma excelente colaboradora em equipas de trabalho. Tenho uma habilidade natural para aprender fácilmente e enfrentar desafios com determinação. Sou uma pessoa desenrascada, sempre pronta para encontrar soluções inovadoras para problemas variados.</p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+  </section>
+  <section id="experience">
+    <h1 class="title">Experiência</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container frontend">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+              <div>
+                <h3>HTML</h3>
+                <p>Intermédio</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+              <div>
+                <h3>CSS</h3>
+                <p>Intermédio</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+              <div>
+                <h3>JavaScript</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+              <div>
+                <h3>Haskell</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+              <div>
+                <h3>#C</h3>
+                <p>Intermédio</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+              <div>
+                <h3>Java</h3>
+                <p>Intermédio</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+              <div>
+                <h3>Python</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+              <div>
+                <h3>SQL</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+              <div>
+                <h3>Git</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Alguns Projetos</p>
+    <h1 class="title">Projetos</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/projecto-1.png" alt="Project 1" class="project1-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Projeto 1</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Sarafont/Engenharia-de-Software'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/OXiiC4CCKOc'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project2-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Projeto 2</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Sarafont/Inovacao-Digital'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://asgciencias.wixsite.com/librolens'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Projeto 3</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Sarafont/SO-TP'">
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Saiba mais</p>
+    <h1 class="title">Contacte-me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+        <p><a href="mailto:sarafontes2001@gmail.com">sarafontes2001@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+        <p><a href="https://pt.linkedin.com/in/sara-fontes-b930b09b">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Sara Fontes. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
